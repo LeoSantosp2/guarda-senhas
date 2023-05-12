@@ -79,7 +79,7 @@ const InputDataPage = () => {
               onPress={() => closePage()}
             />
           </Header>
-          <View>
+          <View behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
             <InputDataBox
               style={{
                 shadowColor: '#000000',
@@ -92,7 +92,6 @@ const InputDataPage = () => {
 
                 elevation: 5,
               }}
-              behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
             >
               <Label>Serviço:</Label>
               <Input value={service} onChangeText={setService} />
