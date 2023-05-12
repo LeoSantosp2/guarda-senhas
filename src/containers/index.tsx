@@ -3,7 +3,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import Toast from 'react-native-toast-message';
-import { Modal } from 'react-native';
+import { Modal, Platform } from 'react-native';
 
 import {
   Container,
@@ -166,7 +166,7 @@ const ContanerDatas = ({
       </View>
 
       <Modal visible={edit} transparent={true} animationType="slide">
-        <ViewEdit>
+        <ViewEdit behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
           <ViewInput>
             <ViewInputHeader>
               <Icon
