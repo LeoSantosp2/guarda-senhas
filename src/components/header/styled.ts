@@ -5,7 +5,7 @@ import { Colors } from '../../config/colors';
 export const Container = styled.View`
   width: 100%;
   padding: 0px 10px;
-  padding-top: 35px;
+  padding-top: 50px;
   padding-bottom: 10px;
   flex-direction: row;
   justify-content: space-between;
