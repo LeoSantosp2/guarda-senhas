@@ -32,7 +32,7 @@ export const Text = styled.Text`
   color: ${Colors.color03};
 `;
 
-export const ViewEdit = styled.View`
+export const ViewEdit = styled.KeyboardAvoidingView`
   flex: 1;
   justify-content: center;
   align-items: center;
