@@ -29,7 +29,7 @@ const Header = () => {
 
       <Button>
         <ButtonText>
-          <Icon name="plus" size={28} onPress={() => handleAdd()} />
+          <Icon name="plus" size={34} onPress={() => handleAdd()} />
         </ButtonText>
       </Button>
     </Container>
