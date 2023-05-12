@@ -21,7 +21,7 @@ export const Header = styled.View`
   background-color: ${Colors.color03};
 `;
 
-export const View = styled.View`
+export const View = styled.KeyboardAvoidingView`
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ export const Title = styled.Text`
   color: ${Colors.color01};
 `;
 
-export const InputDataBox = styled.KeyboardAvoidingView`
+export const InputDataBox = styled.View`
   width: 90%;
   padding: 10px;
   border-radius: 5px;
